@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC Portfolio</title>
+
+    <!-- import bulma css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- script -->
+    <script src="./assets/scripts/main.js" defer></script>
+
+</head>
+<body>
+    <section class="hero is-fullheight is-dark">
+        <!-- Tabs Header-->
+        <div class="hero-head">
+            <div class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <li class="tab is-active" onclick="openTab(event,'about-me')"><a>About Me</a></li>
+                        <li class="tab" onclick="openTab(event,'skills')"><a>Skills</a></li>
+                        <li class="tab" onclick="openTab(event,'projects')"><a>Projects</a></li>
+                        <li class="tab" onclick="openTab(event,'designs')"><a>Designs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs' Contents -->
+        <div class="hero-body">
+            <div id="about-me" class="content-tab">
+                <div class="columns is-vcentered mx-5">
+                    <div class="column is-2">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded pfp-frame" src="./assets/img/AvatarMaker.svg">
+                            <!-- https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light -->
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <p class="title">Hello World! I'm Joyce, a jolly developer who likes to design occasionally. Click on one of the tabs above to learn more about me~</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" class="content-tab" style="display:none">
+                <div>
+                    <p>
+                    Overview <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates natus omnis itaque illo. Odio iure doloremque exercitationem harum sunt possimus placeat illo eligendi, eius pariatur at aliquam et amet, aspernatur repellat? Magni iste magnam neque. Explicabo qui voluptate repellat similique! Aliquam animi commodi tempora quos velit hic placeat corrupti ad iusto quia vel libero ex cumque exercitationem molestiae, soluta adipisci dignissimos maxime non suscipit repudiandae laborum consequatur? Dolores eaque alias quo quod incidunt ullam, quos iste hic quis, culpa dolorum debitis in iusto deserunt accusantium officia optio voluptatibus eveniet, minima at tempora magni itaque. Beatae nihil voluptas veritatis doloribus recusandae.</p>
+                </div>
+            </div>
+
+            <div id="projects" class="content-tab" style="display:none">
+                <div>
+                    <p>
+                    Projects are here <br>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ratione facilis totam? Soluta quia explicabo earum facilis, necessitatibus eaque saepe natus assumenda reiciendis accusamus praesentium dolor fugiat dolorem nesciunt aperiam maiores ullam beatae voluptatem? Inventore harum minima perferendis nisi maiores!</p>
+                </div>
+            </div>
+            
+            <div id="designs" class="content-tab" style="display:none">
+                <div>
+                    <p>
+                    Designs to be placed here <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates natus omnis itaque illo. Odio iure doloremque exercitationem harum sunt possimus placeat illo eligendi, eius pariatur at aliquam et amet, aspernatur repellat? Magni iste magnam neque. Explicabo qui voluptate repellat similique! </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer (Contacts & Creadits) -->
+        <div class="hero-foot">
+        </div>
+    </section>
+
+</body>
+</html>
