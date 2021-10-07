@@ -1,24 +1,9 @@
-.title {
-    color: white;
-    font-weight: 800;
-    font-family: 'Nunito Sans', sans-serif;
-    text-shadow: 1px 1px 1px rgb(39, 39, 39), 3px 3px 6px rgb(29, 29, 29);
-}
-
-.subtitle {
-    color: white;
-    text-shadow: 1px 1px 1px #000, 3px 3px 6px rgb(0, 0, 3);
-}
-
-.hero {
-    background: url(https://source.unsplash.com/3k9PGKWt7ik/1920x1080);
-    background-size: cover;
-    /* "Rainbow Photo by <a href='https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Pawel Czerwinski</a> on <a href='https://unsplash.com/s/photos/background-colorful?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>
-        " */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* border-top: 10px solid coral; */
+:root {
+    --about-me: rgba(241, 131, 119, 0.445); /* 175, 175, 15 */
+    --skills: rgba(156, 120, 0, 0.459);
+    --projects: rgba(7, 121, 96, 0.562);
+    --designs: rgba(0, 82, 136, 0.63);  /* 0, 178, 223 */
+    --contact: rgba(153, 75, 150, 0.658);
 }
 
 .pfp-frame {
@@ -29,3 +14,59 @@
     box-shadow: 10px 10px 10px 10px rgba(255, 248, 220, 0.7),
                 -10px 0px 5px 10px rgba(255, 221, 220, 0.5);
 }
+
+.caption {
+    font-size: smaller;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.tab {
+    background-color: rgba(179, 179, 179, 0.3);
+    font-weight: 600;
+    color: white;
+    font-size: large;
+    font-variant-caps: all-petite-caps;
+    text-shadow: 0px 0px 10px rgb(85, 85, 85);
+}
+
+.contact-icon {
+    margin-right: 10px;
+    /* color: gray; */
+}
+
+#about-me .title {
+    color: white;
+    font-weight: 800;
+    font-family: 'Nunito Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgb(39, 39, 39), 3px 3px 6px rgb(73, 73, 73);
+}
+
+#body {
+    background-color: var(--about-me);
+    border-top: 2px solid white;
+    border-bottom: 10px solid white;
+    /* box-shadow: 0 0 10px 8px rgba(255, 248, 220, 0.3); */
+    /* 254, 255, 220*/
+}
+
+.hero {
+    background: url(https://source.unsplash.com/3k9PGKWt7ik/1920x1080);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+}
+

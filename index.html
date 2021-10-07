@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JC Portfolio</title>
 
-    <!-- import bulma css -->
+    <!-- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- script -->
-    <script src="./assets/scripts/main.js" defer></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="./assets/scripts/main.js"></script>
+    
 </head>
 <body>
     <section class="hero is-fullheight is-dark">
@@ -24,20 +27,20 @@
                         <li class="tab is-active" onclick="openTab(event,'about-me')"><a>About Me</a></li>
                         <li class="tab" onclick="openTab(event,'skills')"><a>Skills</a></li>
                         <li class="tab" onclick="openTab(event,'projects')"><a>Projects</a></li>
-                        <li class="tab" onclick="openTab(event,'designs')"><a>Designs</a></li>
+                        <li class="tab" onclick="openTab(event,'designs')"><a>Designs/Others</a></li>
+                        <li class="tab" onclick="openTab(event,'contact')"><a>Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Tabs' Contents -->
-        <div class="hero-body">
+        <div class="hero-body" id="body">
             <div id="about-me" class="content-tab">
                 <div class="columns is-vcentered mx-5">
                     <div class="column is-2">
                         <figure class="image is-128x128">
-                            <img class="is-rounded pfp-frame" src="./assets/img/AvatarMaker.svg">
-                            <!-- https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight2&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light -->
+                            <img class="is-rounded pfp-frame" src="./assets/img/avatar-no-bg.png">
                         </figure>
                     </div>
                     <div class="column">
@@ -46,33 +49,166 @@
                 </div>
             </div>
 
+
             <div id="skills" class="content-tab" style="display:none">
-                <div>
-                    <p>
-                    Overview <br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates natus omnis itaque illo. Odio iure doloremque exercitationem harum sunt possimus placeat illo eligendi, eius pariatur at aliquam et amet, aspernatur repellat? Magni iste magnam neque. Explicabo qui voluptate repellat similique! Aliquam animi commodi tempora quos velit hic placeat corrupti ad iusto quia vel libero ex cumque exercitationem molestiae, soluta adipisci dignissimos maxime non suscipit repudiandae laborum consequatur? Dolores eaque alias quo quod incidunt ullam, quos iste hic quis, culpa dolorum debitis in iusto deserunt accusantium officia optio voluptatibus eveniet, minima at tempora magni itaque. Beatae nihil voluptas veritatis doloribus recusandae.</p>
+                <div class="columns is-vcentered mx-5">
+                    <div class="content column is-6">
+                        <p class="title is-4">
+                            Here are the languages, frameworks, and databases I have worked with.
+                        </p>
+                        <ul>
+                            <li class="subtitle">C/C++, Java, Python, JavaScript </li>
+                            <li class="subtitle">HTML, CSS, PHP</li>
+                            <li class="subtitle">React Native</li>
+                            <li class="subtitle">MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/img/dev-focus.svg" alt="" height="80%" width="80%">
+                        <p class="caption">Photo from <a href="https://undraw.co/" target="_blank" rel="noreferrer"> unDraw</a>.</p>
+                    </div>
                 </div>
             </div>
 
+
             <div id="projects" class="content-tab" style="display:none">
-                <div>
-                    <p>
-                    Projects are here <br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ratione facilis totam? Soluta quia explicabo earum facilis, necessitatibus eaque saepe natus assumenda reiciendis accusamus praesentium dolor fugiat dolorem nesciunt aperiam maiores ullam beatae voluptatem? Inventore harum minima perferendis nisi maiores!</p>
+                <p class="title is-4">
+                    Some of my personal and collaborative projects.
+                    Check out more at my <a class="link" href="https://github.com/happy-the-cat" target="_blank" rel="noreferrer">GitHub</a> account.
+                </p>
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <a href="https://github.com/happy-the-cat/Employee-Management-System.git" target="_blank" rel="noreferrer">
+                                        <figure class="image is-4by3">
+                                            <img src="./assets/img/ems.png" alt="Yee: Employee Management System">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        An employee management system application for smartphones developed using React Native and Firebase.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <a href="https://github.com/happy-the-cat/TimeLine.git" target="_blank" rel="noreferrer">
+                                        <figure class="image is-4by3">
+                                            <img src="./assets/img/timeline.png" alt="TimeLine">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        A weekly scheduler app with timer created using Java and JavaFX.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>  
                 </div>
             </div>
             
+
             <div id="designs" class="content-tab" style="display:none">
-                <div>
-                    <p>
-                    Designs to be placed here <br>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates natus omnis itaque illo. Odio iure doloremque exercitationem harum sunt possimus placeat illo eligendi, eius pariatur at aliquam et amet, aspernatur repellat? Magni iste magnam neque. Explicabo qui voluptate repellat similique! </p>
+                <p class="title is-4">
+                    Below are some of my ventures in the creative world as well as other non-programming related projects I have contributed in.
+                </p>
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <a href="https://www.canva.com/design/DAD0cKBurl0/A9WtHeBN0BDCYTfL6MzSYw/view?utm_content=DAD0cKBurl0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank" rel="noreferrer">
+                                        <figure class="image is-4by3">
+                                            <img src="./assets/img/magazine.png" alt="Vocare Magazine">
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        A vocations magazine desgined in Canva.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="./assets/img/fractals.png" alt="Whiteboard animation">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        Whiteboard animation video about Fractals created using Powtoon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="./assets/img/edugame.png" alt="Historia RPG game">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="content">
+                                        A 2D role-playing game about Philippine History, specifically from the pre-colonial period until the arrival of Ferdinand Magellan, developed with RPG Maker MV.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="content-tab" style="display:none">
+                <div class="columns is-vcentered mx-5">
+                    <div class="column is-2">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded pfp-frame" src="./assets/img/avatar-no-bg.png">
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <p class="title">
+                            Hi again! Thanks for coming this far into my portfolio. You can find me at the following.
+                        </p>                        
+                        <a class="icon is-large contact-icon" href="https://github.com/happy-the-cat" target="_blank" rel="noreferrer">
+                            <i class="fab fa-brands fa-github fa-3x"></i>
+                        </a>
+                        <a class="icon is-large contact-icon" href="www.linkedin.com/in/joycehcai" target="_blank" rel="noreferrer">
+                            <i class="fab fa-brands fa-linkedin fa-3x"></i>
+                        </a>                    
+                        <!-- <a class="icon is-large contact-icon" href="https://www.hackerrank.com/Rubie" target="_blank" rel="noreferrer">
+                            <i class="fab fa-hackerrank fa-3x"></i>
+                        </a> -->
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Footer (Contacts & Creadits) -->
-        <div class="hero-foot">
+        <div class="hero-foot caption"> 
+            Photo by&nbsp; <a href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"  target="_blank" rel="noreferrer">Pawel Czerwinski</a> &nbsp;on&nbsp; <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"  target="_blank" rel="noreferrer">Unsplash</a>
+            &emsp; | &nbsp;
+            <a href="https://bulma.io" style="margin-top: 6px;" target="_blank" rel="noreferrer">
+                <img
+                    src="https://bulma.io/images/made-with-bulma--white.png"
+                    alt="Made with Bulma"
+                    width="128"
+                    height="24">
+            </a>
         </div>
     </section>
 
